@@ -9,16 +9,5 @@ def get_users_choice():
   print("|     | |     | |     |")
   print("+-----+ +-----+ +-----+")
 
-  king_card = print("+-----+" +
-                    "|     |"
-                    "|  K  |"
-                    "|     |"
-                    "+-----+")
-
-  print(king_card)
-
   choice = get_int_range("choice:", 1, 3)
-  print(choice)
-
-
-get_users_choice()
+  return choice
