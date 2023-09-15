@@ -1,3 +1,4 @@
+# Read the maze.txt and maze2.txt files and store the content in a 2D list, then return the stored 2D list.
 def read_maze(filename):
     maze_array = []
 
