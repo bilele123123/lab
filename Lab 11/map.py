@@ -8,7 +8,11 @@ class Map:
         return cls._instance
 
     def __init__(self):
-        with open("map.txt", "r") as file:
+        self.load_map(1)
+
+    def load_map(self, map_num):
+        map_filename = f"map-{map_num}.txt"
+        with open(map_filename, "r") as file:
             self.map = [list(line.strip()) for line in file]
         self.revealed = [[False] * len(self.map[0]) for _ in range(len(self.map))]
 
